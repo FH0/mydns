@@ -1,0 +1,38 @@
+{
+  "in": [
+    {
+      "tag": "1053",
+      "address": "0.0.0.0",
+      "port": 1053
+    },
+    {
+      "tag": "2053",
+      "address": "0.0.0.0",
+      "port": 2053
+    }
+  ],
+  "out": [
+    {
+      "tag": "google",
+      "address": "8.8.8.8",
+      "port": 53
+    },
+    {
+      "tag": "114",
+      "address": "114.114.114.114",
+      "port": 53
+    }
+  ],
+  "routing": [
+    {
+      "in_tag": ["1053"],
+      "domain": ["baidu\\.com", "qq\\.com"],
+      "out_tag": "114"
+    },
+    {
+      "in_tag": ["2053"],
+      "domain": ["weibo\\.com", "weixin\\.com"],
+      "out_tag": "google"
+    }
+  ]
+}
